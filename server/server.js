@@ -23,9 +23,11 @@ io.on('connection', (socket) => {
 	const filename = "../xml/data.xml";
 	fs.readFile( filename, function(err, data) {
 		var data = JSON.parse( parser.toJson(data) );
+		console.log("Parsed Data!");
 		data = data[ "search_results" ][ "study" ];
 		socket.on("FETCH_TOP_10_DRUGS", (disease) => {
 			var drugs = [];
+			console.log("Processing query for: " + disease );
 			for( let i = 0; i < data.length; i++ ) {
 				if( Object.values( data[ i ][ "conditions" ] ).indexOf( disease ) >= 0 ||
 				    data[ i ][ "conditions" ][ "condition" ] == disease ) {
@@ -50,15 +52,14 @@ io.on('connection', (socket) => {
 				values[ drugs[ i ] ]++;
 			}
 			var items = Object.keys( values ).map(function(key) {
-  				return [key, values[key]];
+  				return {'name': key, 'value': values[key]};
 			});
 			items.sort(function(first, second) {
-  				return second[1] - first[1];
+  				return second['value'] - first['value'];
 			});
-			let topValues = items.slice( 0, 10 );
-			for( let i = 0; i < topValues.length; i++ ) {
-				topValues[ i ] = topValues[ i ][ 0 ];
-			}
+			console.log("Successfully processed query for " + disease + ". Data returned: " );
+			const topValues = items.slice( 0, 10 );
+			console.log( topValues );
 			socket.emit("TOP_10_DRUGS", topValues );
 		});
 	});

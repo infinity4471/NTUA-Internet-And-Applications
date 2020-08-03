@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css';
-
-import { ComboBox } from '@progress/kendo-react-dropdowns';
+import {SimpleTable} from './table';
 import '@progress/kendo-theme-default/dist/all.css';
 import io from 'socket.io-client';
 
@@ -25,16 +23,6 @@ class Selector extends React.Component {
 			this.setState({drugs: data });
 		});
 	}
-	createData = ( id, val ) => {
-		return { id, val };
-	}
-	make_rows = () => {
-		let rows = [];
-		for( let i = 0; i < this.state.drugs.length; i++ ) {
-			rows.push( this.createData( i + 1,  this.state.drugs[ i ] ) );
-		}
-		return rows;
-	}
 	render() {
 		return (
 			<div className="Selector">
@@ -43,13 +31,8 @@ class Selector extends React.Component {
 			<button onClick={this.sendSelection}>
 				Αναζήτηση
 			</button>
-			<table>
-				{this.make_rows().map(row => (
-        				<tr key={row.id}>
-          					<td>{row.val}</td>
-        				</tr>
-      				))}
-			</table>
+			<SimpleTable data = {this.state.drugs}>
+			</SimpleTable>
 			</div>
 		);
 	}
