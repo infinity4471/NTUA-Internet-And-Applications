@@ -1,4 +1,4 @@
-# NTUA-Internet-And-Applications
+# :pill: NTUA-Appathon - Statistical Analysis on the GTOV Dataset
 
 Semester project on the Internet and Applications class @ ECE-NTUA.
 
@@ -22,7 +22,7 @@ To install the client dependencies of the react framework on the client folder r
 
 After the required dependencies are installed we can deploy the client by running: ```npm start```
 
-## Technologies used:
+## :heavy_check_mark: Technologies used:
 
 Frontend: Javascript, React, socket.IO, HTML, CSS
 
