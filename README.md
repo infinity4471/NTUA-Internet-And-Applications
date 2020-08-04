@@ -8,9 +8,12 @@ Web application for parsing xml files and finding the top 10 drugs used for curi
 
 Using the XML datasets from https://clinicaltrials.gov/ the web app receives a disease as input and after parsing the data outputs the most commonly used drugs for that particular disease using the <intervention> XML identifier.
 
-## :heavy_plus_sign: Application dependencies
+## :heavy_plus_sign: Setting up the App
 
-This application is dependent on the Node Javascript runtime environment, the node package manager(npm) as well as the React Javascript framework.
+Begin by cloning the repository locally by running:
+```git clone https://www.github.com/infinity4471/NTUA-Internet-and-Applications```
+
+Note: The application is dependent on the Node Javascript runtime environment, the node package manager(npm) as well as the React Javascript framework.
 
 ## :hammer: Running the server
 
