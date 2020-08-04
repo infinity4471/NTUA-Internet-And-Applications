@@ -10,17 +10,10 @@ Using the XML datasets from https://clinicaltrials.gov/ the web app receives a d
 
 ## :heavy_plus_sign: Setting up the App
 
-<<<<<<< HEAD
-Start by cloning the repository locally:
-```git clone https://www.github.com/infinity4471/Internet-and-Applications```
-
-The application is dependent on the Node Javascript runtime environment, the node package manager(npm) as well as the React Javascript framework.
-=======
 Begin by cloning the repository locally by running:
 ```git clone https://www.github.com/infinity4471/NTUA-Internet-and-Applications```
 
 Note: The application is dependent on the Node Javascript runtime environment, the node package manager(npm) as well as the React Javascript framework.
->>>>>>> 4a416b81cb8aae4f386492bb1e72850f5def0f3f
 
 ## :hammer: Running the server
 
