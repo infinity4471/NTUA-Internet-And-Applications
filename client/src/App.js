@@ -11,9 +11,6 @@ class Selector extends React.Component {
 		disease: undefined,
 		drugs: []
 	}
-	constructor( props ) {
-		super( props );
-	}
 	getSelection = ( event ) => {
 		this.setState({disease: event.target.value});
 	}
