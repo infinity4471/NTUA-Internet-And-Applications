@@ -26,4 +26,4 @@ After the required dependencies are installed we can deploy the client by runnin
 
 Frontend: Javascript, React, socket.IO, HTML, CSS
 
-Backend: Javascript, express.IO, socket.IO, Node.JS
+Backend: Javascript, express, socket.IO, Node.JS
