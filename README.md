@@ -14,7 +14,9 @@ This application is dependent on the Node Javascript runtime environment, the no
 
 ## :hammer: Running the server
 
-On the server folder run: ```node server.js```
+To install the required dependencies we run: ```sh install.sh```
+
+After that to run the server we execute: ```node server.js```
 
 ## :wrench: Deploying the client
 
