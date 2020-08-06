@@ -32,3 +32,8 @@ After the required dependencies are installed we can deploy the client by runnin
 Frontend: Javascript, React, socket.IO, HTML, CSS
 
 Backend: Javascript, express, socket.IO, Node.JS
+
+
+## :tv: Video Presentation
+
+Apart from the powerpoint presentation found on the repo you can also check the video presentation on the following link:  https://youtu.be/exwL6wYKB9g
