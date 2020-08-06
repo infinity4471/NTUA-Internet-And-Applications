@@ -36,4 +36,4 @@ Backend: Javascript, express, socket.IO, Node.JS
 
 ## :tv: Video Presentation
 
-Apart from the powerpoint presentation found on the repo you can also check the video presentation on the following link:  https://youtu.be/exwL6wYKB9g
+Apart from the powerpoint presentation found on the repo you can also check the video presentation on the following link: https://youtu.be/N8IwUlw8tMg 
